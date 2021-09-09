@@ -3,3 +3,161 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 /* font-family: 'Poppins', sans-serif; */
+
+body {
+  font-family: "PT Serif";
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+  margin-bottom: 96px;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+
+.header-texts {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  width: 439px;
+}
+
+.header-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  /* identical to box height */
+  text-transform: uppercase;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-img {
+  position: relative;
+  margin-right: 30px;
+}
+
+.img-title {
+  position: absolute;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  right: 0;
+  top: 0;
+}
+
+.img-caption {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.img-title.product {
+  transform-origin: 60px 60px;
+}
+
+.section-img.art {
+  margin-top: 90px;
+}
+
+.img-title.art {
+  transform-origin: 52px 52px;
+}
+
+.img-title.tech {
+  transform-origin: 42px 42px;
+}
+
+.img-title.ux {
+  transform-origin: 50px 50px;
+}
+
+.section-img.dev-1 {
+  margin-top: 126px;
+}
+
+.img-title.dev-1 {
+  transform-origin: 45px 45px;
+}
+
+.img-title.dev-2 {
+  transform-origin: 50px 50px;
+}
+
+.img-item {
+  max-width: 238px;
+  max-height: 341px;
+  object-fit: cover;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .header-texts {
+    font-size: 14px;
+    line-height: 21px;
+    width: 333px;
+  }
+  .header-title {
+    margin-bottom: 38px;
+  }
+
+  .header-subtitle {
+    margin-bottom: 10px;
+  }
+
+  .section-img {
+    margin-right: 20px;
+  }
+
+  .img-item {
+    width: 138.72px;
+    height: 209px;
+  }
+
+  .section-img.art {
+    margin-top: 60px;
+  }
+
+  .section-img.dev-1 {
+    margin-top: 0;
+  }
+
+  .section-img.ux {
+    margin-top: 60px;
+  }
+
+  .section-img.dev-2 {
+    margin-top: 60px;
+  }
+}
